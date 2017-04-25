@@ -1,0 +1,950 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"anim",
+				"animationScreenWidth"
+			],
+			[
+				"trans",
+				"translateY()"
+			],
+			[
+				"tab",
+				"table-cell"
+			],
+			[
+				"ani",
+				"animationScreenHeight"
+			],
+			[
+				"scre",
+				"animationScreenWidth"
+			],
+			[
+				"animation",
+				"animationScreen"
+			],
+			[
+				"updat",
+				"updateBackground"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "123789456/save_the_falcon/on_screen_buttons/index.html",
+			"settings":
+			{
+				"buffer_size": 7291,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "123789456/save_the_falcon/keyboard_controls/index_test.html",
+			"settings":
+			{
+				"buffer_size": 2099,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "123789456/save_the_falcon/keyboard_controls/index_live.html",
+			"settings":
+			{
+				"buffer_size": 1049,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "123789456/angle_movement/angle_move_test.html",
+			"settings":
+			{
+				"buffer_size": 134,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "123789456/angle_movement/angle_move_live.html",
+			"settings":
+			{
+				"buffer_size": 4587,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "21231547984545649787@stemcodehome.html",
+			"settings":
+			{
+				"buffer_size": 1133,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "123789456/save_the_falcon/keyboard_controls/save_falcon_keyboard_controls.js",
+			"settings":
+			{
+				"buffer_size": 7121,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "123789456/save_the_falcon/keyboard_controls/save_falcon_keyboard_controls_live.js",
+			"settings":
+			{
+				"buffer_size": 6424,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "123789456/bounce_animations/canvas_layout.html",
+			"settings":
+			{
+				"buffer_size": 361,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "123789456/bounce_animations/bounce_animation_live.html",
+			"settings":
+			{
+				"buffer_size": 7824,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "123789456/bounce_animations/bounce_test_1.js",
+			"settings":
+			{
+				"buffer_size": 7641,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 293,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "stemcodepassword.html",
+			"settings":
+			{
+				"buffer_size": 271,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scss/style.scss",
+			"settings":
+			{
+				"buffer_size": 742,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "123789456/alien_invasion_original/index.html",
+			"settings":
+			{
+				"buffer_size": 981,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "123789456/alien_invasion_original/app.js",
+			"settings":
+			{
+				"buffer_size": 7947,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "123789456/alien_invasion_original/css/app.css",
+			"settings":
+			{
+				"buffer_size": 925,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "html, body {"
+			}
+		},
+		{
+			"file": "css/style.css",
+			"settings":
+			{
+				"buffer_size": 737,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 104.0,
+		"last_filter": "install\t",
+		"selected_items":
+		[
+			[
+				"install\t",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/ryanm/Dropbox/funstemcode.github.io",
+		"/C/Users/ryanm/Dropbox/funstemcode.github.io/123789456",
+		"/C/Users/ryanm/Dropbox/funstemcode.github.io/123789456/alien_invasion_original",
+		"/C/Users/ryanm/Dropbox/funstemcode.github.io/123789456/alien_invasion_original/css",
+		"/C/Users/ryanm/Dropbox/funstemcode.github.io/123789456/bounce_animations",
+		"/C/Users/ryanm/Dropbox/funstemcode.github.io/scss"
+	],
+	"file_history":
+	[
+		"/C/Users/ryanm/Dropbox/funstemcode.github.io/style.scss",
+		"/C/Users/ryanm/Dropbox/funstemcode.github.io/css/style.css",
+		"/C/Users/ryanm/Dropbox/funstemcode.github.io/123789456/save_the_falcon/save_falcon_keyboard_controls.js",
+		"/C/Users/ryanm/Dropbox/funstemcode.github.io/123789456/save_the_falcon/keyboard_controls/save_falcon_keyboard_controls.js",
+		"/C/Users/ryanm/Dropbox/funstemcode.github.io/21231547984545649787@stemcodehome.html",
+		"/C/Users/ryanm/Dropbox/funstemcode.github.io/123789456/save_the_falcon/index.html",
+		"/C/Users/ryanm/Dropbox/funstemcode.github.io/123789456/save_the_falcon/keyboard_controls/index.html",
+		"/C/Users/ryanm/Dropbox/funstemcode.github.io/main_html_boiler.html",
+		"/C/Users/ryanm/Dropbox/funstemcode.github.io/123789456/bird_fire_game/bird_fire_keyboard_controls.html",
+		"/C/Users/ryanm/Dropbox/funstemcode.github.io/123789456/bird_fire_game/bird_fire_keyboard_controls.js",
+		"/C/Users/ryanm/Dropbox/funstemcode.github.io/scss/style.scss",
+		"/C/Users/ryanm/Dropbox/funstemcode.github.io/fun_site.html",
+		"/C/Users/ryanm/Dropbox/funstemcode.github.io/input.scss",
+		"/C/Users/ryanm/Dropbox/html_canvas_games/helicopter_game/final/test_game.html",
+		"/C/Users/ryanm/Dropbox/html_canvas_games/helicopter_game/final/index_test.html",
+		"/C/Users/ryanm/Dropbox/html_canvas_games/helicopter_game/final/js/startGame.js",
+		"/C/Users/ryanm/Dropbox/html_canvas_games/helicopter_game/final/js/input.js",
+		"/C/Users/ryanm/Dropbox/html_canvas_games/helicopter_game/final/js/sprite.js",
+		"/C/Users/ryanm/Dropbox/html_canvas_games/helicopter_game/final/js/app.js",
+		"/C/Users/ryanm/Dropbox/html_canvas_games/helicopter_game/final/js/test_game.html",
+		"/C/Users/ryanm/Dropbox/html_canvas_games/helicopter_game/final/js/app_stripped.js",
+		"/C/Users/ryanm/Dropbox/html_canvas_games/helicopter_game/final/js/app_backup.js",
+		"/C/Users/ryanm/Google Drive/html_canvas_games/helicopter_game/final/css/app.css",
+		"/C/Users/ryanm/Google Drive/html_canvas_games/helicopter_game/final/js/sprite.js",
+		"/C/Users/ryanm/Google Drive/html_canvas_games/helicopter_game/final/js/resources.js",
+		"/C/Users/ryanm/Google Drive/html_canvas_games/helicopter_game/final/js/input.js",
+		"/C/Users/ryanm/Google Drive/html_canvas_games/helicopter_game/final/js/Things to Look Up about Awesome Game",
+		"/C/Users/ryanm/Google Drive/html_canvas_games/helicopter_game/final/index.html",
+		"/C/Users/ryanm/Google Drive/html_canvas_games/helicopter_game/final/js/app.js",
+		"/C/Users/ryanm/Dropbox/stemryanaz/my_bookmarks.html",
+		"/C/Users/ryanm/Dropbox/HTML_Canvas_Tests/coin_tap_game/sprite-animation-demo/sprite-animation-demo.js",
+		"/C/Users/ryanm/Dropbox/HTML_Canvas_Tests/moon_animation/sprite-animation-demo.js",
+		"/C/Users/ryanm/Dropbox/stemryanaz/index.html",
+		"/C/Users/ryanm/Dropbox/stemryanaz/_layouts/default.html",
+		"/C/Users/ryanm/Dropbox/stemryanaz/_site/index.html",
+		"/C/Users/ryanm/Dropbox/stemryanaz/index.md",
+		"/C/Users/ryanm/Dropbox/stemryanaz/_posts/2017-04-18-welcome-to-jekyll.markdown",
+		"/C/Users/ryanm/Dropbox/my_bookmarks.html",
+		"/C/Users/ryanm/Dropbox/ryanmoralesaz.io/rmaz.io/falconcodeclub/index.html",
+		"/C/Users/ryanm/Dropbox/ryanmoralesaz.io/rmaz.io/falconcodeclub/intro_meeting.html",
+		"/C/Users/ryanm/Dropbox/ryanmoralesaz.io/rmaz.io/falconcodeclub/meeting2.html",
+		"/C/Users/ryanm/Dropbox/ryanmoralesaz.io/rmaz.io/falconcodeclub/week1_example.html",
+		"/C/Users/ryanm/Dropbox/ryanmoralesaz.io/rmaz.io/falconcodeclub/index.html.html",
+		"/C/Users/ryanm/Dropbox/ryanmoralesaz.io/rmaz.io/README.md",
+		"/C/Users/ryanm/Dropbox/ryanmoralesaz.io/ryanmoralesaz.github.io/Gemfile"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"bird_fire_",
+			"&& .key",
+			"(.key",
+			".key",
+			"#278da4",
+			"update",
+			"updateEnt",
+			"isDown",
+			"pos"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "123789456/save_the_falcon/on_screen_buttons/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7291,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2231,
+								2231
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 745.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "123789456/save_the_falcon/keyboard_controls/index_test.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2099,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								2099
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 336.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "123789456/save_the_falcon/keyboard_controls/index_live.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1049,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								977,
+								977
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 729.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "123789456/angle_movement/angle_move_test.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 134,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								134
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "123789456/angle_movement/angle_move_live.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4587,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								160,
+								160
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "21231547984545649787@stemcodehome.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1133,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								539,
+								539
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 115.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "123789456/save_the_falcon/keyboard_controls/save_falcon_keyboard_controls.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7121,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								7121
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "123789456/save_the_falcon/keyboard_controls/save_falcon_keyboard_controls_live.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6424,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15,
+								15
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "123789456/bounce_animations/canvas_layout.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 361,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								361
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "123789456/bounce_animations/bounce_animation_live.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7824,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								210,
+								210
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "123789456/bounce_animations/bounce_test_1.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 7641,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								7641
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 293,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								105,
+								105
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "stemcodepassword.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 271,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								56,
+								56
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "scss/style.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 742,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								118,
+								118
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "123789456/alien_invasion_original/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 981,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								981,
+								981
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 379.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "123789456/alien_invasion_original/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7947,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7947,
+								7947
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6691.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "123789456/alien_invasion_original/css/app.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 925,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								925,
+								925
+							]
+						],
+						"settings":
+						{
+							"auto_name": "html, body {",
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1075.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 737,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "funstemcode.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 305.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

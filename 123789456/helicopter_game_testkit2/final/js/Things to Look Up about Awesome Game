@@ -1,0 +1,7 @@
+Things to Look Up about Awesome Game
+
+1. What is appendChild document.body.appendChild(canvas);
+
+2. Look up Date.now()
+
+3. How does Math.random() work? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random

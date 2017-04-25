@@ -1,5 +1,6 @@
 (function () {
 document.getElementById("instructions").style.display = 'none';
+console.log("use the arrow keys to move the hero character around the screen")
 //////////// CHANGE THESE VARIABLES
 /////////// CHANGE THESE VARIABLES
 /////////// CHANGE THESE VARIABLES
@@ -10,9 +11,9 @@ var myObstacleImage = "https://imgs-tuts-dragoart-386112.c.cdn77.org/how-to-draw
 */
 
  //AHS Falcon Fire Image Package
-var myBackgroundImage = "bird_fire_img/forest_fire.gif";
-var myHeroImage = "bird_fire_img/alchesayFalconsHead.png"; 
-var myObstacleImage = "bird_fire_img/fireball.png";
+var myBackgroundImage = "img/forest_fire.gif";
+var myHeroImage = "img/alchesayFalconsHead.png"; 
+var myObstacleImage = "img/fireball.png";
 
 var rateOfEnemy = 100;
 var speedOfEnemy = 1;
@@ -52,7 +53,7 @@ var animationScreen = {
         this.canvas.height = animationScreenHeight;
         
         this.context = this.canvas.getContext("2d");
-        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        document.body.insertBefore(this.canvas, document.body.childNodes[2]);
         
         this.frameNo = 0;
         //set the render interval for updating the game screen
@@ -164,7 +165,7 @@ function render() {
     if (animationScreen.frameNo == 1 || everyinterval(rateOfEnemy)) {
         y = animationScreenHeight;
         minWidth = 20;
-        maxWidth = 200;
+        maxWidth = animationScreenWidth;
         width = Math.floor(Math.random()*(maxWidth-minWidth+1)+minWidth);
         minGap = 50;
         maxGap = 400;
