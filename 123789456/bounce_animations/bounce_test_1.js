@@ -1,0 +1,213 @@
+//run the script on page load
+(function () {
+
+//Declare the global variables
+var hero, heroWidth, heroHeight, heroColor, heroX, heroY; //Declare the hero object
+var animationScreenWidth, animationScreenHeight; //declare the screen width and height
+var secondsBox;
+var startHeightBox;
+var frameBox;
+var velocityBox;
+var yPosBox;
+//////////CHANGE YOUR VARIABLES///////
+//Set the height and width of the animation area
+animationScreenWidth = 500; //set the screen width
+animationScreenHeight = 100; //set the screen height
+animationScreenBackground = "#a4d3ee"; //set the screen color
+
+//Set up hero properties
+heroWidth = 10; 
+heroHeight = 10; 
+heroColor = "green"; 
+heroX = 
+(animationScreenWidth/2)-heroWidth; // default center to half the screen
+heroY = 
+0-heroHeight; //default to just above screen
+var EGrav = 9.8;
+
+//SET UP PHYSICS VARIABLES
+var heightMultiplier = 1;//1 is 10 pixels=1meter, 10 is 1px=1meter, 100 is 1px = 10 meters etc.
+const earthGravity = ((EGrav/60)**2)*(1/heightMultiplier);
+//const earthGravity = 1*heightMultiplier;
+var rateOfBounce = 1;
+var currentGravitySpeed = 0;
+var frameCounter = 0;
+
+//startAnimation
+//declare the start animation function
+function startAnimation() {
+    //The properties for character objects are
+    //(width,height,color,starting x position, starting y position, rateof gravity, type)
+    hero = new animationObject(heroWidth, heroHeight, heroColor, heroX, heroY, earthGravity); // set the properties of the hero object
+    
+    //Create any new objects
+    //here below
+    //friend = new animationObject(10,10,"red",20,20, 7);
+    secondsBox = new animationObject("16px", "Consolas", "black", 10,40,null,"text");
+    frameBox =new animationObject("16px", "Consolas", "black", 10,60,null,"text");
+    velocityBox= new animationObject("16px", "Consolas", "black", 10,80,null,"text");
+    yPosBox = new animationObject("16px", "Consolas", "black", 10,100 ,null,"text");
+    startHeightBox = new animationObject("16px", "Consolas", "black", 10,20 ,null,"text");
+    animationScreen.start(); //call the animation screen variable and start it
+}
+
+//RENDER//////////////////////
+//declare the function to render the animation screen
+
+
+//animationScreen
+//declare the screen animation variable
+var animationScreen = {
+
+    canvas : document.createElement("canvas"), //set the canvas 
+    //declare the start function
+    start : function() {
+        //set up the properties of the canvas animations screen
+        this.canvas.setAttribute("id", "animationScreen");
+        this.canvas.width = animationScreenWidth;
+        this.canvas.height = animationScreenHeight;
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        
+        //set a counter for time based calculations
+        
+        //set the render interval for updating the game screen
+        this.interval = setInterval(render, 1000/60);        
+    },
+
+    //declare a function to color the screen background
+    colorScreen : function() {
+        this.context.fillStyle=animationScreenBackground;
+        this.context.fillRect(0,0,animationScreenWidth,animationScreenHeight);
+    },
+
+    //declare a function to stop all animation
+    stopAnimation : function() {
+        clearInterval(this.interval);
+    },    
+    //declare a function to clear the screen of past animations
+    clearScreen : function() {
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    }
+}
+
+//animationObject
+//declare the prototype for an animated object (character)
+function animationObject(width, height, color, x, y, gravity, type) {
+    this.type = type;
+    this.width = width;
+    this.height = height;
+    this.x = x;
+    this.y = y;    
+    this.speedX = 0;
+    this.speedY = 0;    
+    
+    //set up the gravity and bounce variables
+    this.rateOfGravity = gravity;
+    this.rateOfBounce = rateOfBounce;
+    this.currentGravitySpeed = currentGravitySpeed;
+
+    //create a method to draw the object on the screen   
+    this.drawCharacter = function() {
+        ctx = animationScreen.context;
+        if (this.type == "text") {
+            ctx.font = this.width + " " + this.height;
+            ctx.fillStyle = color;
+            ctx.fillText(this.text, this.x, this.y);
+        } else {
+            ctx.fillStyle = color;
+            ctx.fillRect(this.x, this.y, this.width, this.height);
+        }
+    }
+    //declare a function to change the positon of the animation object
+    this.newPosition = function(newGravity) {
+        //Set up the algorithm to change position based on gravity
+
+        this.currentGravitySpeed += this.rateOfGravity;
+        this.x += this.speedX;
+        this.y += this.speedY + this.currentGravitySpeed;//swap currentGravitySpeed
+
+        //Check for collision with bottom of screen
+        this.hitBottom();
+    }
+
+    //declare a function to initiate the bottom of the screen
+    this.hitBottom = function(){
+
+        //set the bottom of the screen equal to height of the screen - the height of character because y is at top of character
+        var screenBottom = animationScreen.canvas.height - this.height;
+        //if the character is below the bottom of screen, reset character to touch the bottom
+        //then flip the characters current trajectory to upwards with a minus sign 
+        if (this.y > screenBottom)
+        {
+            //optional to stop the animtion, comment out if necessary
+            //animationScreen.stopAnimation(); //this stops the animation at hitbottom
+            
+            this.y = screenBottom;
+            
+            this.currentGravitySpeed = -(this.currentGravitySpeed * this.rateOfBounce);
+        }
+    }
+  
+}
+
+var fallTime = 0;
+function render() {
+    var velocity;
+    //if(
+    //hero.currentGravitySpeed >= 0){
+
+        velocity = (((EGrav**2)*(fallTime/60))/10);
+    //}
+    //if(hero.currentGravitySpeed < 0){velocity += (-(velocity))}
+
+    if(hero.currentGravitySpeed <= 0){fallTime=0;}
+   
+    console.log(hero.currentGravitySpeed);
+    //console.log(fallTime);
+    //Create the render steps
+    
+    //console.log(frameCounter) in seconds;
+    /*
+    if((frameCounter%6) ==0){
+        console.log("seconds: "+(frameCounter/60));
+        
+    }
+    */
+    /*
+    console.log('frame #' + frameCounter);
+    console.log("Velocity pixels per frame: " + (hero.currentGravitySpeed*(1/heightMultiplier)));
+    console.log("Y-position bottom: " + (hero.y+hero.height));
+   */
+    
+    animationScreen.clearScreen();//This clears the screen every frame
+    animationScreen.colorScreen();//This colors the background
+    
+    
+    //ON SCREEN HUD TEXT
+    secondsBox.text="seconds: " +(frameCounter/60).toFixed(2);
+    secondsBox.drawCharacter();
+    //frameBox.text="No. of Frames: " + frameCounter;
+    //frameBox.drawCharacter();
+    
+    //if(hero.hitBottom() == true){velocityBox.text="Velocity (m/s): " + (-(((EGrav**2)*(fallTime/60))/10).toFixed(2));}
+    
+  
+   velocityBox.text="Velocity (m/s): " + velocity.toFixed(2)
+    velocityBox.drawCharacter();
+    yPosBox.text="bottom y-position : "+ ((hero.y+hero.height)/(heightMultiplier/.1)).toFixed(2)+ " meters";
+    yPosBox.drawCharacter();
+    startHeightBox.text = "starting height: "+ (heightMultiplier/10 * animationScreenHeight) + " meters";    
+    startHeightBox.drawCharacter();
+    
+    hero.newPosition();
+    hero.drawCharacter();
+    //friend.newPosition(); calculate friend position
+    //friend.drawCharacter(); //draw the friend on screen
+    frameCounter++;//increment the frameCounter every frame
+    fallTime++;
+}
+
+//Call the animation to begin
+startAnimation();
+    } ());

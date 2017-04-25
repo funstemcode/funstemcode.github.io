@@ -1,0 +1,17 @@
+//W3SCHOOLS NOTES to Change
+
+myGamePiece = hero
+
+startGame = startAnimation
+
+myGameArea = animationScreen
+
+component = animationObject
+
+stop = stopAnimation
+
+clear = clearScreen
+
+updateGameArea = render
+
+newPos = newPosition

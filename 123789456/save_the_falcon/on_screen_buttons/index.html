@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Save the Falcon: Mouse Click Controls</title>
+        <meta name="description" content="Save the Falcon - GAME">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link rel="stylesheet" href="css/main.css"> -->
+        <style type="text/css">
+            * {
+                margin: auto;
+                padding: auto;
+            }
+            canvas {
+                margin-left:auto;
+                margin-right: auto;
+                margin-top: 1em;
+                display: block;
+
+            }
+        </style>
+
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        
+        <div style="text-align:center;width:480px;">
+  <button onmousedown = "moveup()" onmouseup="clearmove()" ontouchstart="moveup()">UP</button><br><br>
+  <button onmousedown = "moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">LEFT</button>
+  <button onmousedown = "moveright()" onmouseup="clearmove()" ontouchstart="moveright()">RIGHT</button><br><br>
+  <button onmousedown = "movedown()" onmouseup="clearmove()" ontouchstart="movedown()">DOWN</button>
+</div>
+        
+<!--
+//<script type="text/javascript" src="save_falcon_keyboard_controls.js"></script>4
+-->
+
+<script type="text/javascript">
+    //run the script on page load
+
+
+//Declare the global variables
+var hero, heroWidth, heroHeight, heroColor, heroStartX, heroStartY; //Declare the hero object
+var animationScreenWidth; //declare the screen width
+var animationScreenHeight; //declare the screen height
+var myObstacles = [];
+
+//Declare the height and width of the canvas
+animationScreenWidth = 400; //set the screen width
+animationScreenHeight = 400; //set the screen height
+animationScreenBackground = "#7eC0ee"; //set the screen color
+
+//Declare the properties of the hero object
+heroWidth = 40; 
+heroHeight = 40;
+heroColor = "blue"; //This must be in quotes
+heroStartX = animationScreenWidth/2; 
+heroStartY = animationScreenHeight/2;
+
+
+//declare the function to render the animation screen
+function render() {
+    //This function runs once per frame or 60x/second
+    
+    var x, height, gap, minHeight, maxHeight, minGap, maxGap;
+    for (i = 0; i < myObstacles.length; i += 1) {
+        if (hero.crashWith(myObstacles[i])) {
+            animationScreen.stopAnimation();
+            return;
+        } 
+    }
+    animationScreen.clearScreen();
+    animationScreen.colorScreen();
+
+    animationScreen.frameNo += 1;
+    if (animationScreen.frameNo == 1 || everyinterval(150)) {
+        y = animationScreenHeight;
+        minWidth = 20;
+        maxWidth = 200;
+        width = Math.floor(Math.random()*(maxWidth-minWidth+1)+minWidth);
+        minGap = 50;
+        maxGap = 400;
+        gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
+        myObstacles.push(new animationObject(20, 10, "bird_fire_img/fireball.png", width, 0, "image"));
+       //myObstacles.push(new animationObject(y - width - gap, 10, "green", width + gap, y));
+    }
+    for (i = 0; i < myObstacles.length; i += 2) {
+        myObstacles[i].y += 1;
+        myObstacles[i].drawCharacter();
+    }
+    hero.newPos();
+    hero.drawCharacter();
+}
+
+//declare the screen animation variable
+var animationScreen = {
+
+    canvas : document.createElement("canvas"), //set the canvas 
+    //declare the start function
+    start : function() {
+        //set up the properties of the canvas animations screen
+        this.canvas.setAttribute("id", "animationScreen");
+        this.canvas.width = animationScreenWidth;
+        this.canvas.height = animationScreenHeight;
+        
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        
+        this.frameNo = 0;
+        //set the render interval for updating the game screen
+        this.interval = setInterval(render, 1000/60);        
+    },
+    //declare a function to color the screen background
+    colorScreen : function() {
+        this.context.fillStyle=animationScreenBackground;
+        this.context.fillRect(0,0,animationScreenWidth,animationScreenHeight);
+    },
+    //declare a function to stop all animation
+    stopAnimation : function() {
+        clearInterval(this.interval);
+    },    
+    //declare a function to clear the screen of past animations
+    clearScreen : function() {
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    }
+}
+
+//declare the prototype for an animated object (character)
+function animationObject(width, height, color, x, y, type) {
+    this.type = type;
+    if (type == "image") {
+    this.image = new Image();
+    this.image.src = color;
+  }
+    this.width = width;
+    this.height = height;
+    this.x = x;
+    this.y = y;    
+    this.speedX = 0;
+    this.speedY = 0;    
+    
+    //create a method to draw the object on the screen   
+    this.drawCharacter = function() {
+        ctx = animationScreen.context;
+        if (type == "image") {
+      ctx.drawImage(this.image, 
+        this.x, 
+        this.y,
+        this.width, this.height);
+    }else{
+        ctx.fillStyle = color;
+        ctx.fillRect(this.x, this.y, this.width, this.height);}
+    }
+    this.newPos = function() {
+        this.x += this.speedX;
+        this.y += this.speedY;        
+    }   
+    this.crashWith = function(otherobj) {
+        var myleft = this.x;
+        var myright = this.x + (this.width);
+        var mytop = this.y;
+        var mybottom = this.y + (this.height);
+        var otherleft = otherobj.x;
+        var otherright = otherobj.x + (otherobj.width);
+        var othertop = otherobj.y;
+        var otherbottom = otherobj.y + (otherobj.height);
+        var crash = true;
+        if ((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myleft > otherright)) {
+            crash = false;
+        }
+        return crash;
+    }
+    
+}
+
+
+//declare the start animation function
+function startAnimation() {
+    //The properties for character objects are(width,height,color,starting x position, starting y position)
+    //hero = new animationObject(heroWidth, heroHeight, heroColor, heroStartX, heroStartY); // set the properties of the hero object
+    hero = new animationObject(heroWidth, heroHeight, "https://img.clipartfest.com/fb574ea0bbee07dfd2b77bee8bda9b2d_falcon-clipart-falcons-clipart_830-720.jpeg", heroStartX, heroStartY, "image");
+    animationScreen.start(); //call the animation screen variable and start it
+}
+
+function everyinterval(n) {
+    if ((animationScreen.frameNo / n) % 1 == 0) {return true;}
+    return false;
+}
+
+function moveup() {
+    hero.speedY = -1; 
+}
+
+function movedown() {
+    hero.speedY = 1; 
+}
+
+function moveleft() {
+    hero.speedX = -1; 
+}
+
+function moveright() {
+    hero.speedX = 1; 
+}
+
+function clearmove() {
+    hero.speedX = 0; 
+    hero.speedY = 0; 
+}
+startAnimation();
+
+   
+
+</script>
+
+        
+        
+                
+    </body>
+</html>
