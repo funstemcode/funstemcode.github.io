@@ -1,5 +1,5 @@
 (function () {
-
+document.getElementById("instructions").style.display = 'none';
 //////////// CHANGE THESE VARIABLES
 /////////// CHANGE THESE VARIABLES
 /////////// CHANGE THESE VARIABLES
